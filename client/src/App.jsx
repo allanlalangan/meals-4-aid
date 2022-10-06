@@ -11,7 +11,7 @@ const App = () => {
         <header>
           <h1>Meals 4 Aid</h1>
         </header>
-        <main>
+        <main className='flex'>
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/login' element={<LoginPage />} />
