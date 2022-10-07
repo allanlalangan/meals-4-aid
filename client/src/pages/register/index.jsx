@@ -2,9 +2,9 @@ import RegisterForm from '../../components/RegisterForm';
 
 const RegisterPage = () => {
   return (
-    <section className='w-full'>
+    <main className='flex flex-col w-full'>
       <RegisterForm />
-    </section>
+    </main>
   );
 };
 export default RegisterPage;

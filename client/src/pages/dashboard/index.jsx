@@ -1,8 +1,8 @@
 const DashboardPage = () => {
   return (
-    <section className='text-red-500'>
+    <main className='flex w-full'>
       <h2>Dashboard</h2>
-    </section>
+    </main>
   );
 };
 export default DashboardPage;

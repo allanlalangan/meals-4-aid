@@ -2,10 +2,10 @@ import LoginForm from '../../components/LoginForm';
 
 const LoginPage = () => {
   return (
-    <section className='w-full'>
+    <main className='flex flex-col w-full'>
       <h2>Login</h2>
       <LoginForm />
-    </section>
+    </main>
   );
 };
 export default LoginPage;
