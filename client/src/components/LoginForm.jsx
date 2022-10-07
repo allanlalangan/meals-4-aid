@@ -12,7 +12,7 @@ const Login = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='m-auto mt-4 flex max-w-screen-sm flex-col border border-indigo-200 p-4'
+      className='mx-4 mt-4 flex md:w-2/3 md:mx-auto lg:w-1/2 flex-col border border-indigo-200 p-4'
     >
       <button className='flex items-center justify-center bg-indigo-50 py-4 transition hover:bg-indigo-200'>
         <span className=''>Login with Google</span>

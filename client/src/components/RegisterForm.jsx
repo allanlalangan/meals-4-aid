@@ -23,7 +23,7 @@ const Register = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='m-auto mt-4 flex max-w-screen-sm flex-col border border-indigo-200 p-4'
+      className='mx-4 md:mx-auto mt-4 flex flex-col border border-indigo-200 p-4 md:w-2/3 lg:w-1/2 m-auto'
     >
       {inputs?.map((input, i) => (
         <>
@@ -41,11 +41,10 @@ const Register = () => {
         </>
       ))}
       <fieldset className='flex items-center'>
-        <label htmlFor='birthdate' className='w-1/3'>
+        <label htmlFor='birthdate' className='w-1/2'>
           Date of Birth
         </label>
-        <input type='date' name='birthdate' className='my-2 w-1/3 p-2'></input>
-        <input type='time' name='birthtime' className='my-2 w-1/3 p-2'></input>
+        <input type='date' name='birthdate' className='my-2 w-1/2 p-2' />
       </fieldset>
       <button
         type='submit'
