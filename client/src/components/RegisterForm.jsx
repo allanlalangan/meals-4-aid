@@ -2,6 +2,7 @@ import FormInput from './FormInput';
 import { Link } from 'react-router-dom';
 import { inputs } from '../util/inputs';
 import { useState } from 'react';
+import { FcGoogle } from 'react-icons/fc';
 
 const Register = () => {
   const [values, setValues] = useState({
@@ -23,8 +24,17 @@ const Register = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='mx-4 md:mx-auto mt-4 flex flex-col border border-indigo-200 p-4 md:w-2/3 lg:w-1/2 m-auto'
+      className='m-4 flex md:w-2/3 md:mx-auto lg:w-1/2 flex-col bg-slate-50 border border-slate-200 shadow-md p-12 rounded-sm'
     >
+      <button className='mb-4 flex items-center justify-center bg-slate-100 border border-slate-200 py-4 transition hover:border-emerald-400 rounded'>
+        <FcGoogle className='mx-2 text-2xl' />
+
+        <span className=''>Continue with Google</span>
+      </button>
+      <span className='relative m-auto flex w-full flex-col content-center items-center py-2 text-center'>
+        <span className='z-10 bg-slate-50 px-4'>or</span>
+        <div className='absolute top-1/2 h-[1px] w-full bg-indigo-100'></div>
+      </span>
       {inputs?.map((input, i) => (
         <>
           <FormInput
@@ -48,7 +58,7 @@ const Register = () => {
       </fieldset>
       <button
         type='submit'
-        className='bg-indigo-50 py-4 transition hover:bg-indigo-200'
+        className='mb-4 flex items-center justify-center bg-slate-100 border border-slate-200 py-4 transition hover:border-emerald-400 rounded'
       >
         Create My Account
       </button>

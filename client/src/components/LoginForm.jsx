@@ -1,3 +1,4 @@
+import { FcGoogle } from 'react-icons/fc';
 import { Link } from 'react-router-dom';
 import { inputs } from '../util/inputs';
 import FormInput from './FormInput';
@@ -12,9 +13,10 @@ const Login = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='mx-4 mt-4 flex md:w-2/3 md:mx-auto lg:w-1/2 flex-col border border-indigo-200 p-4'
+      className='m-4 flex md:w-2/3 md:mx-auto lg:w-1/2 flex-col bg-slate-50 border border-slate-200 shadow-md p-12 rounded-sm'
     >
-      <button className='flex items-center justify-center bg-indigo-50 py-4 transition hover:bg-indigo-200'>
+      <button className='mb-4 flex items-center justify-center bg-slate-100 border border-slate-200 py-4 transition hover:border-emerald-400 rounded'>
+        <FcGoogle className='mx-2 text-2xl' />
         <span className=''>Login with Google</span>
       </button>
       <span className='relative m-auto flex w-full flex-col content-center items-center py-2 text-center'>
@@ -33,7 +35,7 @@ const Login = () => {
       ))}
       <button
         type='submit'
-        className='bg-indigo-50 py-4 transition hover:bg-indigo-200'
+        className='mb-4 flex items-center justify-center bg-slate-100 border border-slate-200 py-4 transition hover:border-emerald-400 rounded'
       >
         Login
       </button>
