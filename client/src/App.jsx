@@ -9,14 +9,12 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      <main className='flex'>
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/login' element={<LoginPage />} />
-          <Route path='/register' element={<RegisterPage />} />
-          <Route path='/dashboard' element={<DashboardPage />} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/login' element={<LoginPage />} />
+        <Route path='/register' element={<RegisterPage />} />
+        <Route path='/dashboard' element={<DashboardPage />} />
+      </Routes>
     </BrowserRouter>
   );
 };

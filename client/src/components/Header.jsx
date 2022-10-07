@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { HiMenuAlt2, HiCog } from 'react-icons/hi';
 
 const Header = () => {
   return (
@@ -10,6 +9,11 @@ const Header = () => {
         </span>
       </Link>
       <nav className='flex w-full items-center justify-center'>
+        <Link to='/dashboard'>
+          <button className='mx-2 transition hover:text-slate-100'>
+            Dashboard
+          </button>
+        </Link>
         <Link to='/login'>
           <button className='mx-2 transition hover:text-slate-100'>
             Login

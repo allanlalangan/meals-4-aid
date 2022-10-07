@@ -34,12 +34,12 @@ export const inputs = [
     required: true,
     errorMessage: 'Passwords do not match',
   },
-  {
-    name: 'profilePic',
-    type: 'text',
-    placeholder: 'Upload Picture',
-    label: 'Profile Picture',
-    required: false,
-    errorMessage: '',
-  },
+  // {
+  //   name: 'profilePic',
+  //   type: 'text',
+  //   placeholder: 'Upload Picture',
+  //   label: 'Profile Picture',
+  //   required: false,
+  //   errorMessage: '',
+  // },
 ];

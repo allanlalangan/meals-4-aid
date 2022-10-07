@@ -13,7 +13,7 @@ const Login = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='m-4 flex md:w-2/3 md:mx-auto lg:w-1/2 flex-col bg-slate-50 border border-slate-200 shadow-md p-12 rounded-sm'
+      className='m-4 flex md:w-2/3 md:mx-auto lg:w-1/2 flex-col bg-slate-50 border border-slate-200 shadow-md p-12 rounded'
     >
       <button className='mb-4 flex items-center justify-center bg-slate-100 border border-slate-200 py-4 transition hover:border-emerald-400 rounded'>
         <FcGoogle className='mx-2 text-2xl' />
